@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV App</title>
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a title="navigation" class="navbar-toggler" href="javascript:void(0);" onclick="appdrawer()"><i class="material-icons">menu</i></a>
+        <h1>History</h1>
+        <div class="navmob closed" id="nav">
+            <div class="navlinks">
+                <a class="nav-link" href="/search.html">
+                    Search
+                </a>
+                <a class="nav-link" href="/index.html">
+                    Home
+                </a>
+                <a class="nav-link" href="/watchlist.html">
+                    Watchlist
+                </a>
+                <a class="nav-link" href="/history.html" aria-current>
+                    History
+                </a>
+                <a class="nav-link" href="/settings.html">
+                    Settings
+                </a>
+                <a title="close-navigation" id="close" class="closed" href="javascript:void(0);" onclick="appclose()"></a>
+            </div><!--navlinks-->
+        </div><!--navmob-->
+    </nav>
+    <main>
+        <div class="searchResults history">
+            <h4>14:33 - Mar 13th 2020</h4>
+            <a 
+                href="individual.html" 
+                class="searchItem" 
+                style="background-image: url('assets/img/Shadows.jpg')"
+            >
+                <div class="container">
+                    <h2>Shadows of Death</h2>
+                    <div class="info">
+                        <div class="rating">
+                            <i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons">grade</i>
+                        </div>  
+                    </div>
+                    <p>You can find more information regarding this film on its IMDb page.</p>
+                </div>
+            </a>
+            <h4>11:45 - Mar 12th 2020</h4>
+            <a 
+                href="individual.html" 
+                class="searchItem" 
+                style="background-image: url('assets/img/AbeLincoln.jpg')"
+            >
+                <div class="container">
+                    <h2>Abe Lincoln of the Ninth Avenue</h2>
+                    <div class="info">
+                        <div class="rating">
+                            <i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons outline">grade</i>
+                        </div>  
+                    </div>
+                    <p>A drama about an idealistic law student from Hell's Kitchen who unites his neighborhood pals against a gang. Originally released as Streets of New York.</p>
+                </div>
+            </a>
+            <h4>17:13 - Mar 10th 2020</h4>
+            <a 
+                href="individual.html" 
+                class="searchItem"
+                style="background-image: url('assets/img/Fatty.jpg')"
+            >
+                <div class="container">
+                    <h2>Fatty Joins The Force</h2>
+                    <div class="info">
+                        <div class="rating">
+                            <i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons">grade</i><i class="material-icons outline">grade</i><i class="material-icons outline">grade</i>
+                        </div>  
+                    </div>
+                    <p>A Fatty Arbuckle comedy from 1913 co-starring Al St John and Edgar Kennedy. Fatty Joins the Force is a 1913 American short comedy film featuring Fatty Arbuckle. It features the Keystone Kops in a background role.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <i class="material-icons">skip_previous</i>
+        <i class="material-icons">fast_rewind</i>
+        <i class="material-icons" onClick="if (this.innerHTML == 'play_arrow'){this.innerHTML = 'pause'} else {this.innerHTML = 'play_arrow'}">play_arrow</i>
+        <i class="material-icons">fast_forward</i>
+        <i class="material-icons">skip_next</i>
+    </footer>
+    <script src="assets/js/nav.js"></script>
+</body>
+</html>
