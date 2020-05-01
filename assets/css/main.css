@@ -10,6 +10,10 @@ body {
       grid-template-rows: 50px 1fr 50px;
   font-family: 'Roboto', sans-serif;
   color: #313131;
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+      -ms-user-select: auto !important;
+          user-select: auto !important;
 }
 
 * {
