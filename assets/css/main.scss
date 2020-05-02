@@ -249,6 +249,7 @@ main {
         }
     }
     &.login {
+        grid-gap: 2rem;
         form {
             display: grid;
             grid-gap: 1rem;

@@ -353,6 +353,10 @@ main .bigPlay i {
   top: 0;
 }
 
+main.login {
+  grid-gap: 2rem;
+}
+
 main.login form {
   display: -ms-grid;
   display: grid;
